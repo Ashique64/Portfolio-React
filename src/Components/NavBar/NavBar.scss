@@ -8,7 +8,7 @@
         text-decoration: none;
         color: #00abf0;
         font-size: 28px;
-        font-family: "Poppins", sans-serif;
+        font-family: cursive;
         font-style: italic;
         font-weight: bold;
         letter-spacing: 2px;
@@ -87,6 +87,10 @@
 
 @media (max-width: 769px) {
     .nav {
+
+        .logo {
+            font-size: 20px;
+        }
         #navbar-items {
             display: none;
             display: flex;
@@ -98,7 +102,9 @@
             height: 100vh;
             min-width: 180px;
             padding: 20px;
+            background-color: #081b29;
             transition: 0.3s ease-in-out;
+            z-index: 999;
 
             li {
                 margin-bottom: 30px;

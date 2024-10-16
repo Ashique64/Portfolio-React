@@ -20,7 +20,7 @@ const NavBar = () => {
             <div>
                 <ul id="navbar-items" className={menuIcon ? "show" : ""}>
                     <li>
-                        <a className={activeItem === "Home" ? "active" : ""} href="" onClick={(e) => handleClick(e,"Home")}>
+                        <a className={activeItem === "Home" ? "active" : ""} href="#home" onClick={(e) => handleClick(e,"Home")}>
                             Home
                         </a>
                     </li>
