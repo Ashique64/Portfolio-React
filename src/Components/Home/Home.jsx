@@ -26,7 +26,7 @@ const Home = () => {
     return (
         <div id="home">
             <div className="details">
-                <h2>Hi, I'm Muhammed Ashique</h2>
+                <h2>Hi, I'm <span>Muhammed Ashique</span></h2>
                 <h3>
                     I'm <span ref={typedElement}></span>
                 </h3>
