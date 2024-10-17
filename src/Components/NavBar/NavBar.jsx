@@ -3,55 +3,69 @@ import "./NavBar.scss";
 
 const NavBar = () => {
     const [menuIcon, setMenuicon] = useState(false);
-    const [activeItem, setActiveItem] = useState("Home");
+    const [activeItem, setActiveItem] = useState("home");
 
     const handleMenuIcon = () => {
         setMenuicon(!menuIcon);
     };
 
-    const handleClick = (e,item) => {
+    const handleScroll = (e, sectionId) => {
         e.preventDefault();
-        setActiveItem(item);
+        const section = document.getElementById(sectionId);
+        if (sectionId) {
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+        setActiveItem(sectionId);
     };
 
     return (
         <div className="nav">
-            <a className="logo" href="">ASHIQUE</a>
+            <a className="logo" href="">
+                ASHIQUE
+            </a>
             <div>
                 <ul id="navbar-items" className={menuIcon ? "show" : ""}>
                     <li>
-                        <a className={activeItem === "Home" ? "active" : ""} href="#home" onClick={(e) => handleClick(e,"Home")}>
+                        <a
+                            className={activeItem === "home" ? "active" : ""}
+                            href="#home"
+                            onClick={(e) => handleScroll(e, "home")}
+                        >
                             Home
                         </a>
                     </li>
                     <li>
                         <a
-                            className={activeItem === "Service" ? "active" : ""}
-                            href=""
-                            onClick={(e) => handleClick(e,"Service")}
+                            className={activeItem === "about" ? "active" : ""}
+                            href="#about"
+                            onClick={(e) => handleScroll(e, "about")}
                         >
-                            Service
-                        </a>
-                    </li>
-                    <li>
-                        <a className={activeItem === "About" ? "active" : ""} href="" onClick={(e) => handleClick(e,"About")}>
                             About
                         </a>
                     </li>
                     <li>
                         <a
-                            className={activeItem === "Portfolio" ? "active" : ""}
-                            href=""
-                            onClick={(e) => handleClick(e,"Portfolio")}
+                            className={activeItem === "services" ? "active" : ""}
+                            href="#services"
+                            onClick={(e) => handleScroll(e, "services")}
+                        >
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            className={activeItem === "portfolio" ? "active" : ""}
+                            href="#portfolio"
+                            onClick={(e) => handleScroll(e, "portfolio")}
                         >
                             Portfolio
                         </a>
                     </li>
                     <li>
                         <a
-                            className={activeItem === "Contact" ? "active" : ""}
-                            href=""
-                            onClick={(e) => handleClick(e,"Contact")}
+                            className={activeItem === "contact" ? "active" : ""}
+                            href="#contact"
+                            onClick={(e) => handleScroll(e, "contact")}
                         >
                             Contact
                         </a>
@@ -64,7 +78,5 @@ const NavBar = () => {
         </div>
     );
 };
-
-
 
 export default NavBar;
