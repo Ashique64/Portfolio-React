@@ -4,7 +4,7 @@ import "./Services.scss";
 const Services = () => {
     return (
         <div id="services">
-            <div className="titile">
+            <div className="title">
                 <h2>Services</h2>
                 <p>
                     As a Full Stack Python developer, I offer a range of services to clients who need web application
