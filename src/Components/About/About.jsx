@@ -46,7 +46,7 @@ const About = () => {
                             <li>
                                 <i className="fas fa-chevron-right"></i> <strong>Website:</strong>
                                 <span>
-                                    <a href="#"><www className="ashique64 netlify app"></www></a>
+                                    <a target="_blank" href="www.ashique64.netlify.app">www.ashique64.netlify.app</a>
                                 </span>
                             </li>
                             <li>
