@@ -1,0 +1,119 @@
+#contact {
+    padding: 20px 40px;
+    min-height: 100vh;
+
+    .title {
+        padding: 30px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0px;
+
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 28px;
+            color: #00abf0;
+            letter-spacing: 3px;
+            font-weight: 500;
+            text-shadow: 2px 2px 4px rgba(0, 171, 240, 0.5), -2px -2px 4px rgba(0, 171, 240, 0.5),
+                2px -2px 4px rgba(0, 171, 240, 0.5), -2px 2px 4px rgba(0, 171, 240, 0.5);
+            position: relative;
+            display: inline;
+
+            &::after {
+                content: "";
+                width: 100%;
+                height: 2px;
+                background-color: #00abf0;
+                box-shadow: 2px 2px 4px rgba(0, 171, 240, 0.5), -2px -2px 4px rgba(0, 171, 240, 0.5),
+                    2px -2px 4px rgba(0, 171, 240, 0.5), -2px 2px 4px rgba(0, 171, 240, 0.5);
+                position: absolute;
+                bottom: -3px;
+                left: 0px;
+            }
+        }
+    }
+
+    .section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin: 40px 0px;
+
+        .details {
+
+            padding-right: 60px;
+            .items {
+                display: flex;
+                flex-direction: column;
+
+                h3 {
+                    font-size: 28px;
+                    font-weight: 500;
+                    margin: 0;
+                    color: rgb(199, 130, 41);
+                }
+
+                p {
+                    color: rgb(240, 234, 226);
+                }
+
+                .icon {
+                    margin: 20px 0px;
+                    i {
+                        color: rgb(199, 130, 41);
+                        font-size: 20px;
+                        margin-right: 20px;
+                    }
+
+                    span {
+                        color: rgb(240, 234, 226);
+                    }
+                }
+
+                
+            }
+        }
+
+        .form {
+
+            .items {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    color: rgb(240, 234, 226);
+                    margin: 10px 0px;
+                }
+                input, textarea {
+                    max-width: 70%;
+                    background-color: #062531d8;
+                    border-radius: 5px;
+                    padding: 15px;
+                    color: #00abf0;
+                    border: none;
+                }
+                
+                button {
+                    max-width: 120px;
+                    margin: 20px 0px;
+                    cursor: pointer;
+                    padding: 13px;
+                    background-color: rgb(199, 130, 41);
+                    border-radius: 6px;
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                    border: none;
+                    outline: 2px solid rgb(199, 130, 41); 
+                    transition: 0.4s ease-in-out;
+                    
+                    &:hover {
+                        color: rgb(199, 130, 41);
+                        background-color:transparent;
+                    }
+                }
+            }
+        }
+    }
+}
