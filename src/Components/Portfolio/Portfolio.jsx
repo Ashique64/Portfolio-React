@@ -14,11 +14,13 @@ const Portfolio = () => {
                         <img src="/netflix-react.png" alt="" />
                     </a>
                 </div>
-                <div className="card2">
-                    <a target='_blank' href="https://to-do-seven-psi.vercel.app/">
-                        <img src="/To-Do react.png" alt="" />
+
+                <div className="card6">
+                    <a target='_blank' href="https://friendly-mandazi-42cbbc.netlify.app/">
+                        <img src="/Screenshot 2024-10-19 160132.png" alt="" />
                     </a>
                 </div>
+                
                 <div className="card3">
                     <a target='_blank' href="https://spotify-kqk5.vercel.app/">
                         <img src="/Spotify.png" alt="" />
@@ -34,11 +36,12 @@ const Portfolio = () => {
                         <img src="/Starbucks.png" alt="" />
                     </a>
                 </div>
-                <div className="card6">
-                    <a target='_blank' href="https://acer-x37a.vercel.app/">
-                        <img src="/Acer.png" alt="" />
+                <div className="card2">
+                    <a target='_blank' href="https://to-do-seven-psi.vercel.app/">
+                        <img src="/To-Do react.png" alt="" />
                     </a>
                 </div>
+                
             </div>
         </div>
     </div>
