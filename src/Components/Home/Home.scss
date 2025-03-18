@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap");
+
 #home {
     padding: 20px 40px;
     display: grid;
@@ -8,8 +10,10 @@
     .details {
         padding: 30px 0px;
         h2 {
+            font-family: "Big Shoulders Stencil", sans-serif;
             font-size: 34px;
             color: rgb(240, 234, 226);
+            letter-spacing: 4px;
             margin: 0;
 
             span {
@@ -18,10 +22,11 @@
         }
 
         h3 {
+            font-family: "Big Shoulders Stencil", sans-serif;
+            letter-spacing: 4px;
             font-size: 28px;
             color: rgb(199, 130, 41);
-            margin: 0;
-            letter-spacing: 3px;
+            margin: 5px 0px;
 
             span {
                 font-weight: 400;
@@ -70,14 +75,15 @@
         margin: 10px 0px;
 
         .pic {
-            width: 50%;
+            width: 320px;
             border-radius: 50%;
             overflow: hidden;
             max-height: 320px;
             box-shadow: 0 0 0 10px #049bd758, 0 0 0 20px #0980c4ad, 0 0 0 30px rgba(6, 32, 184, 0.559),
-                    0 0 0 60px rgba(9, 25, 117, 0.526);
+                0 0 0 60px rgba(9, 25, 117, 0.526);
             cursor: pointer;
             transition: 1s ease-in-out;
+            animation: rotateShadow 5s infinite linear;
 
             img {
                 object-fit: cover;
@@ -94,13 +100,24 @@
     }
 }
 
-
-
-@media (max-width:769px) {
+@media (min-width: 550px) and (max-width: 992px) {
     #home {
         display: grid;
         grid-template-areas: "profile_pic" "details";
         grid-template-columns: 1fr;
+        padding: 15px;
+        .profile_pic {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    #home {
+        display: grid;
+        grid-template-areas: "profile_pic" "details";
+        grid-template-columns: 1fr;
+        padding: 15px;
 
         .profile_pic {
             order: 1;
@@ -139,6 +156,5 @@
                 }
             }
         }
-
     }
 }

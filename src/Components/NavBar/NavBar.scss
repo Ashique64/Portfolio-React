@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&display=swap');
+
 .nav {
     display: flex;
     align-items: center;
@@ -9,16 +11,23 @@
     z-index: 1000;
 
     .logo {
+        display: flex;
+        align-items: center;
         text-decoration: none;
         color: #00abf0;
-        font-size: 28px;
-        font-family: cursive;
+        width: 150px;
+        font-family: "Big Shoulders Inline", sans-serif;
         font-style: italic;
         font-weight: bold;
         letter-spacing: 2px;
-        text-shadow: 2px 2px 25px rgba(0, 171, 240, 0.5), -2px -2px 25px rgba(0, 171, 240, 0.5),
-            2px -2px 25px rgba(0, 171, 240, 0.5), -2px 2px 25px rgba(0, 171, 240, 0.5);
         transition: all 0.3s ease-in-out;
+
+        img {
+            object-fit: cover;
+            width: 120px;
+            height: 70px;
+            transform: scale(1.4)
+        }
 
         &:hover {
             transform: scale(1.1);
@@ -91,7 +100,7 @@
 
 @media (max-width: 769px) {
     .nav {
-
+        padding: 15px;
         .logo {
             font-size: 20px;
         }

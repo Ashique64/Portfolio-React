@@ -9,8 +9,10 @@ const NavBar = () => {
         setMenuicon(!menuIcon);
     };
 
+
     const handleScroll = (e, sectionId) => {
         e.preventDefault();
+        setMenuicon(false);
         const section = document.getElementById(sectionId);
         if (sectionId) {
             section.scrollIntoView({ behavior: "smooth" });
@@ -21,7 +23,7 @@ const NavBar = () => {
     return (
         <div className="nav">
             <a className="logo" href="">
-                ASHIQUE
+                <img src="/ashiq.png" alt="logo" />
             </a>
             <div>
                 <ul id="navbar-items" className={menuIcon ? "show" : ""}>
