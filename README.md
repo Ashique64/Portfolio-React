@@ -1,6 +1,6 @@
 
 Live URL
-- [https://ashique-alpha.vercel.app/]
+- [https://ashique-gamma.vercel.app/]
 
 <h2 align="left">Hi 👋! My name is Muhammed Ashique and I'm a Full Stack Developer</h2>
 
